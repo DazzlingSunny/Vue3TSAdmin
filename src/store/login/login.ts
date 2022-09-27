@@ -14,9 +14,13 @@ const loginModule: Module<ILoginState, IRootState> = {
   mutations: {},
   actions: {
     accountLoginAction({ commit }, payload: any) {
+      console.log(commit)
+
       console.log('执行accountLoginAction', payload)
     },
     phoneLoginAction({ commit }, payload: any) {
+      console.log(commit)
+
       console.log('执行phoneLoginAcion', payload)
     }
   }
